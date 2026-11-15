@@ -1,0 +1,133 @@
+package com.hforge.exceptions;
+
+public enum ErrorCodes {
+
+	// ===========================
+	// General (100 - 199)
+	// ===========================
+	UNKNOWN_ERROR(100),
+	INVALID_REQUEST(101),
+	INVALID_CONFIGURATION(102),
+	FEATURE_NOT_SUPPORTED(103),
+	OPERATION_NOT_ALLOWED(104),
+	SERVICE_UNAVAILABLE(105),
+
+	// ===========================
+	// Validation (200 - 299)
+	// ===========================
+	FILE_NOT_FOUND(200),
+	FILE_EMPTY(201),
+	FILE_SIZE_EXCEEDED(202),
+	INVALID_FILE_NAME(203),
+	INVALID_EXTENSION(204),
+	INVALID_MIME_TYPE(205),
+	INVALID_FILE_TYPE(206),
+	INVALID_PATH(207),
+	INVALID_URL(208),
+	INVALID_FILE_ID(209),
+	FILE_ALREADY_EXISTS(210),
+	DUPLICATE_FILE(211),
+	FILE_LOCKED(212),
+	FILE_EXPIRED(213),
+
+	// ===========================
+	// Storage (300 - 399)
+	// ===========================
+	STORAGE_NOT_FOUND(300),
+	STORAGE_UNAVAILABLE(301),
+	STORAGE_CONNECTION_FAILED(302),
+	STORAGE_WRITE_ERROR(303),
+	STORAGE_READ_ERROR(304),
+	STORAGE_DELETE_ERROR(305),
+	STORAGE_MOVE_ERROR(306),
+	STORAGE_COPY_ERROR(307),
+	STORAGE_PERMISSION_DENIED(308),
+	STORAGE_QUOTA_EXCEEDED(309),
+
+	// ===========================
+	// Upload / Download (400 - 499)
+	// ===========================
+	UPLOAD_FAILED(400),
+	DOWNLOAD_FAILED(401),
+	DELETE_FAILED(402),
+	COPY_FAILED(403),
+	MOVE_FAILED(404),
+	RENAME_FAILED(405),
+	RESTORE_FAILED(406),
+	ARCHIVE_FAILED(407),
+	STREAM_FAILED(408),
+
+	// ===========================
+	// Image (500 - 599)
+	// ===========================
+	INVALID_IMAGE(500),
+	IMAGE_READ_FAILED(501),
+	IMAGE_WRITE_FAILED(502),
+	IMAGE_RESIZE_FAILED(503),
+	IMAGE_CROP_FAILED(504),
+	IMAGE_ROTATE_FAILED(505),
+	IMAGE_COMPRESS_FAILED(506),
+	IMAGE_CONVERT_FAILED(507),
+	IMAGE_METADATA_FAILED(508),
+	THUMBNAIL_GENERATION_FAILED(509),
+
+	// ===========================
+	// Video (600 - 699)
+	// ===========================
+	INVALID_VIDEO(600),
+	VIDEO_READ_FAILED(601),
+	VIDEO_TRANSCODE_FAILED(602),
+	VIDEO_CONVERT_FAILED(603),
+	VIDEO_COMPRESS_FAILED(604),
+	VIDEO_METADATA_FAILED(605),
+	VIDEO_THUMBNAIL_FAILED(606),
+	VIDEO_STREAM_FAILED(607),
+
+	// ===========================
+	// Audio (700 - 749)
+	// ===========================
+	INVALID_AUDIO(700),
+	AUDIO_CONVERT_FAILED(701),
+	AUDIO_COMPRESS_FAILED(702),
+	AUDIO_METADATA_FAILED(703),
+
+	// ===========================
+	// Document (750 - 799)
+	// ===========================
+	INVALID_DOCUMENT(750),
+	PDF_READ_FAILED(751),
+	PDF_WRITE_FAILED(752),
+	PDF_MERGE_FAILED(753),
+	PDF_SPLIT_FAILED(754),
+	DOCUMENT_CONVERT_FAILED(755),
+	DOCUMENT_METADATA_FAILED(756),
+
+	// ===========================
+	// Security (800 - 899)
+	// ===========================
+	VIRUS_DETECTED(800),
+	ENCRYPTION_FAILED(801),
+	DECRYPTION_FAILED(802),
+	HASH_GENERATION_FAILED(803),
+	CHECKSUM_FAILED(804),
+	PERMISSION_DENIED(805),
+	ACCESS_DENIED(806),
+	INVALID_SIGNATURE(807),
+
+	// ===========================
+	// Internal (900 - 999)
+	// ===========================
+	IO_EXCEPTION(900),
+	NETWORK_ERROR(901),
+	TIMEOUT(902),
+	UNKNOWN_STORAGE_PROVIDER(903),
+	UNSUPPORTED_OPERATION(904),
+	INTERNAL_ERROR(999);
+	private int code;
+	ErrorCodes(int code){
+		this.code=code;
+	}
+	public int getCode() {
+		return code;
+	}
+}

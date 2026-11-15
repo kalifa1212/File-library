@@ -1,0 +1,6 @@
+com\hforge\storageServices\LimitedInputStream.class
+com\hforge\storageServices\LocalStorageService.class
+com\hforge\Main.class
+com\hforge\config\StorageProperties.class
+com\hforge\config\LocalStorageAutoConfiguration.class
+META-INF\spring-configuration-metadata.json

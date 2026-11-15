@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "h-storage",
+      "type": "com.hforge.config.StorageProperties",
+      "sourceType": "com.hforge.config.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "h-storage.create-directories",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.hforge.config.StorageProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "h-storage.overwrite-existing",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.hforge.config.StorageProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "h-storage.root-path",
+      "type": "java.lang.String",
+      "sourceType": "com.hforge.config.StorageProperties",
+      "defaultValue": ".\/uploads"
+    }
+  ],
+  "hints": []
+}

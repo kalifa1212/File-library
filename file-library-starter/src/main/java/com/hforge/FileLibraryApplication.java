@@ -1,0 +1,11 @@
+package com.hforge;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FileLibraryApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(FileLibraryApplication.class,args);
+    }
+}

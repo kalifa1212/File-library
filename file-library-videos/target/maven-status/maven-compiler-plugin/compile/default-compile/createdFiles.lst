@@ -1,0 +1,9 @@
+com\hforge\config\VideoMetadata.class
+com\hforge\Main.class
+com\hforge\Services\impl\VideoToolsServiceImpl.class
+com\hforge\config\VideoAutoConfiguration.class
+com\hforge\config\VideoConversionOptions.class
+com\hforge\Services\VideoToolsService.class
+com\hforge\config\ThumbnailOptions.class
+com\hforge\exceptions\VideoProcessingException.class
+com\hforge\processor\VideosProcessor.class
