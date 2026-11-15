@@ -227,7 +227,7 @@ La bibliothèque a vocation à être :
 Voici quelques pistes d'amélioration possibles :
 
 - Intégration du stockage cloud AWS S3.
-- Prise en charge de MinIO.
+- Prise en charge de MinIO a venir.
 - Traitement multimédia asynchrone.
 - Gestion avancée des profils de qualité HLS.
 - Génération de formes d'onde audio (waveforms).
